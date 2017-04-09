@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>lbj的前端之路</title>
+  <subtitle>学习杰诶斯</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://laobeijing0806.github.io/"/>
+  <updated>2017-03-31T09:48:52.000Z</updated>
+  <id>http://laobeijing0806.github.io/</id>
+  
+  <author>
+    <name>LiuBoJun</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>探索CSS水平垂直居中布局</title>
+    <link href="http://laobeijing0806.github.io/2017/03/30/%E6%8E%A2%E7%B4%A2CSS%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E5%B8%83%E5%B1%80/"/>
+    <id>http://laobeijing0806.github.io/2017/03/30/探索CSS水平垂直居中布局/</id>
+    <published>2017-03-30T12:43:15.000Z</published>
+    <updated>2017-03-31T09:48:52.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;写前端写了近半年，总有一些CSS的小问题等待解决，这几天有空就解决一下这些问题。&lt;/p&gt;
+&lt;p&gt;本文主要列出CSS实现水平垂直居中的几种方法，以及不同方法的优缺点和适用场景以便读者参考使用。&lt;/p&gt;
+&lt;h3 id=&quot;水平居中&quot;&gt;&lt;a href=&quot;#水平居中&quot; class=&quot;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://laobeijing0806.github.io/categories/frontend/"/>
+    
+    
+      <category term="前端" scheme="http://laobeijing0806.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一篇文章</title>
+    <link href="http://laobeijing0806.github.io/2017/02/19/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <id>http://laobeijing0806.github.io/2017/02/19/第一篇文章/</id>
+    <published>2017-02-19T11:56:00.000Z</published>
+    <updated>2017-02-19T14:37:44.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;没人指望你来这里&quot;&gt;&lt;a href=&quot;#没人指望你来这里&quot; class=&quot;headerlink&quot; title=&quot;没人指望你来这里&quot;&gt;&lt;/a&gt;没人指望你来这里&lt;/h3&gt;&lt;p&gt;这是我的第一篇博客，从一个月前搭好，到现在写下第一篇博客（逃），写下第一个字，终于折腾好了，
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="http://laobeijing0806.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+</feed>
