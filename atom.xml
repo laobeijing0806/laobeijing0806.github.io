@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laobeijing0806.github.io/"/>
-  <updated>2017-04-10T12:31:59.785Z</updated>
+  <updated>2017-04-10T12:48:47.016Z</updated>
   <id>http://laobeijing0806.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://laobeijing0806.github.io/2017/04/10/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
     <id>http://laobeijing0806.github.io/2017/04/10/关于博客的搭建/</id>
     <published>2017-04-10T12:27:00.000Z</published>
-    <updated>2017-04-10T12:31:59.785Z</updated>
+    <updated>2017-04-10T12:48:47.016Z</updated>
     
     <summary type="html">
     
@@ -28,6 +28,8 @@
 &lt;h3 id=&quot;Hexo&quot;&gt;&lt;a href=&quot;#Hexo&quot; class=&quot;headerlink
     
     </summary>
+    
+      <category term="生活" scheme="http://laobeijing0806.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
       <category term="生活" scheme="http://laobeijing0806.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
@@ -49,7 +51,7 @@
     
     </summary>
     
-      <category term="前端" scheme="http://laobeijing0806.github.io/categories/frontend/"/>
+      <category term="前端" scheme="http://laobeijing0806.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
       <category term="前端" scheme="http://laobeijing0806.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
@@ -61,13 +63,15 @@
     <link href="http://laobeijing0806.github.io/2017/02/19/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
     <id>http://laobeijing0806.github.io/2017/02/19/第一篇文章/</id>
     <published>2017-02-19T11:56:00.000Z</published>
-    <updated>2017-04-10T12:26:14.960Z</updated>
+    <updated>2017-04-10T12:48:07.992Z</updated>
     
     <summary type="html">
     
       &lt;h3 id=&quot;没人指望你来这里&quot;&gt;&lt;a href=&quot;#没人指望你来这里&quot; class=&quot;headerlink&quot; title=&quot;没人指望你来这里&quot;&gt;&lt;/a&gt;没人指望你来这里&lt;/h3&gt;&lt;p&gt;这是我的第一篇博客，从一个月前搭好，到现在写下第一篇博客（逃），写下第一个字，终于折腾好了，
     
     </summary>
+    
+      <category term="生活" scheme="http://laobeijing0806.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
       <category term="生活" scheme="http://laobeijing0806.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
