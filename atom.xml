@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laobeijing0806.github.io/"/>
-  <updated>2017-04-10T02:16:34.876Z</updated>
+  <updated>2017-04-10T12:28:12.988Z</updated>
   <id>http://laobeijing0806.github.io/</id>
   
   <author>
@@ -16,11 +16,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>关于博客的搭建</title>
+    <link href="http://laobeijing0806.github.io/2017/04/10/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
+    <id>http://laobeijing0806.github.io/2017/04/10/关于博客的搭建/</id>
+    <published>2017-04-10T12:27:00.000Z</published>
+    <updated>2017-04-10T12:28:12.988Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;从一月份开始搭建博客，中间跑去做了两个项目，一直拖拖拉拉，直到昨天才把所有功能都完善。这一路走来，踩了不少坑。今天我就把碰到的问题和解决办法在这里写一下，希望能帮到读者。&lt;/p&gt;
+&lt;p&gt;###　Hexo&lt;/p&gt;
+&lt;p&gt;我的博客是用Hexo搭建的，Hexo是一款基于Node.
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="http://laobeijing0806.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>探索CSS水平垂直居中布局</title>
     <link href="http://laobeijing0806.github.io/2017/03/30/%E6%8E%A2%E7%B4%A2CSS%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E5%B8%83%E5%B1%80/"/>
     <id>http://laobeijing0806.github.io/2017/03/30/探索CSS水平垂直居中布局/</id>
     <published>2017-03-30T12:43:15.000Z</published>
-    <updated>2017-04-10T02:16:34.876Z</updated>
+    <updated>2017-04-10T12:25:28.999Z</updated>
     
     <summary type="html">
     
@@ -34,6 +54,24 @@
     
     
       <category term="前端" scheme="http://laobeijing0806.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一篇文章</title>
+    <link href="http://laobeijing0806.github.io/2017/02/19/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <id>http://laobeijing0806.github.io/2017/02/19/第一篇文章/</id>
+    <published>2017-02-19T11:56:00.000Z</published>
+    <updated>2017-04-10T12:26:14.960Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;没人指望你来这里&quot;&gt;&lt;a href=&quot;#没人指望你来这里&quot; class=&quot;headerlink&quot; title=&quot;没人指望你来这里&quot;&gt;&lt;/a&gt;没人指望你来这里&lt;/h3&gt;&lt;p&gt;这是我的第一篇博客，从一个月前搭好，到现在写下第一篇博客（逃），写下第一个字，终于折腾好了，
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="http://laobeijing0806.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
