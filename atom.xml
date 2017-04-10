@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laobeijing0806.github.io/"/>
-  <updated>2017-04-10T12:28:12.988Z</updated>
+  <updated>2017-04-10T12:31:59.785Z</updated>
   <id>http://laobeijing0806.github.io/</id>
   
   <author>
@@ -20,13 +20,12 @@
     <link href="http://laobeijing0806.github.io/2017/04/10/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
     <id>http://laobeijing0806.github.io/2017/04/10/关于博客的搭建/</id>
     <published>2017-04-10T12:27:00.000Z</published>
-    <updated>2017-04-10T12:28:12.988Z</updated>
+    <updated>2017-04-10T12:31:59.785Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;从一月份开始搭建博客，中间跑去做了两个项目，一直拖拖拉拉，直到昨天才把所有功能都完善。这一路走来，踩了不少坑。今天我就把碰到的问题和解决办法在这里写一下，希望能帮到读者。&lt;/p&gt;
-&lt;p&gt;###　Hexo&lt;/p&gt;
-&lt;p&gt;我的博客是用Hexo搭建的，Hexo是一款基于Node.
+&lt;h3 id=&quot;Hexo&quot;&gt;&lt;a href=&quot;#Hexo&quot; class=&quot;headerlink
     
     </summary>
     
