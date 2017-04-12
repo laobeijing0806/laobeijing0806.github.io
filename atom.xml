@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laobeijing0806.github.io/"/>
-  <updated>2017-04-10T13:52:28.138Z</updated>
+  <updated>2017-04-12T13:04:53.309Z</updated>
   <id>http://laobeijing0806.github.io/</id>
   
   <author>
@@ -16,11 +16,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>理解CSS浮动与清理</title>
+    <link href="http://laobeijing0806.github.io/2017/04/12/%E7%90%86%E8%A7%A3CSS%E6%B5%AE%E5%8A%A8%E4%B8%8E%E6%B8%85%E7%90%86/"/>
+    <id>http://laobeijing0806.github.io/2017/04/12/理解CSS浮动与清理/</id>
+    <published>2017-04-12T02:15:11.000Z</published>
+    <updated>2017-04-12T13:04:53.309Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;作为前端写了很多页面布局，但是浮动这块一直是我似懂非懂的盲点，一方面用浮动能实现很多布局，另一方面浮动造成的影响又会破坏布局让人头疼，所以今天就特地写篇博文解决这块盲点。&lt;/p&gt;
+&lt;p&gt;本文主要讨论以下几个问题：&lt;br&gt;1.浮动的原始用途&lt;br&gt;2.浮动为什么会有文本环绕效
+    
+    </summary>
+    
+      <category term="前端" scheme="http://laobeijing0806.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="http://laobeijing0806.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>关于博客的搭建</title>
     <link href="http://laobeijing0806.github.io/2017/04/10/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
     <id>http://laobeijing0806.github.io/2017/04/10/关于博客的搭建/</id>
     <published>2017-04-10T12:27:00.000Z</published>
-    <updated>2017-04-10T13:52:28.138Z</updated>
+    <updated>2017-04-12T03:02:10.146Z</updated>
     
     <summary type="html">
     

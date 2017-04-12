@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="生活," />
+  <meta name="keywords" content="前端," />
 
 
 
@@ -89,17 +89,17 @@
 
 
 
-<meta name="description" content="没人指望你来这里这是我的第一篇博客，从一个月前开始搭这个博客，到现在写下第一篇文章（逃），写下第一个字，终于折腾好了，我等不及要开始了！ 文章的开始我想先用一句nike的广告词来表明我转到前端的感受  You ‘re not supposed to be here, but here you are.  从进大学的那一天开始，就没人指望我要做什么。当班长，加社团，拿奖学金，加入篮球院队，早起练球，">
-<meta name="keywords" content="生活">
+<meta name="description" content="作为前端写了很多页面布局，但是浮动这块一直是我似懂非懂的盲点，一方面用浮动能实现很多布局，另一方面浮动造成的影响又会破坏布局让人头疼，所以今天就特地写篇博文解决这块盲点。 本文主要讨论以下几个问题：1.浮动的原始用途2.浮动为什么会有文本环绕效果3.如何清理浮动造成的影响 浮动的原始用途以下内容来自张鑫旭大神的《CSS float浮动的深入研究、详解及拓展(一)》：  假设现在CSS中没有浮动(f">
+<meta name="keywords" content="前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇文章">
-<meta property="og:url" content="http://laobeijing0806.github.io/2017/02/19/第一篇文章/index.html">
+<meta property="og:title" content="理解CSS浮动与清理">
+<meta property="og:url" content="http://laobeijing0806.github.io/2017/04/12/理解CSS浮动与清理/index.html">
 <meta property="og:site_name" content="lbj的前端之路">
-<meta property="og:description" content="没人指望你来这里这是我的第一篇博客，从一个月前开始搭这个博客，到现在写下第一篇文章（逃），写下第一个字，终于折腾好了，我等不及要开始了！ 文章的开始我想先用一句nike的广告词来表明我转到前端的感受  You ‘re not supposed to be here, but here you are.  从进大学的那一天开始，就没人指望我要做什么。当班长，加社团，拿奖学金，加入篮球院队，早起练球，">
-<meta property="og:updated_time" content="2017-04-10T13:23:11.409Z">
+<meta property="og:description" content="作为前端写了很多页面布局，但是浮动这块一直是我似懂非懂的盲点，一方面用浮动能实现很多布局，另一方面浮动造成的影响又会破坏布局让人头疼，所以今天就特地写篇博文解决这块盲点。 本文主要讨论以下几个问题：1.浮动的原始用途2.浮动为什么会有文本环绕效果3.如何清理浮动造成的影响 浮动的原始用途以下内容来自张鑫旭大神的《CSS float浮动的深入研究、详解及拓展(一)》：  假设现在CSS中没有浮动(f">
+<meta property="og:updated_time" content="2017-04-12T13:04:53.309Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一篇文章">
-<meta name="twitter:description" content="没人指望你来这里这是我的第一篇博客，从一个月前开始搭这个博客，到现在写下第一篇文章（逃），写下第一个字，终于折腾好了，我等不及要开始了！ 文章的开始我想先用一句nike的广告词来表明我转到前端的感受  You ‘re not supposed to be here, but here you are.  从进大学的那一天开始，就没人指望我要做什么。当班长，加社团，拿奖学金，加入篮球院队，早起练球，">
+<meta name="twitter:title" content="理解CSS浮动与清理">
+<meta name="twitter:description" content="作为前端写了很多页面布局，但是浮动这块一直是我似懂非懂的盲点，一方面用浮动能实现很多布局，另一方面浮动造成的影响又会破坏布局让人头疼，所以今天就特地写篇博文解决这块盲点。 本文主要讨论以下几个问题：1.浮动的原始用途2.浮动为什么会有文本环绕效果3.如何清理浮动造成的影响 浮动的原始用途以下内容来自张鑫旭大神的《CSS float浮动的深入研究、详解及拓展(一)》：  假设现在CSS中没有浮动(f">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://laobeijing0806.github.io/2017/02/19/第一篇文章/"/>
+  <link rel="canonical" href="http://laobeijing0806.github.io/2017/04/12/理解CSS浮动与清理/"/>
 
 
 
 
 
-  <title> 第一篇文章 | lbj的前端之路 </title>
+  <title> 理解CSS浮动与清理 | lbj的前端之路 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -281,7 +281,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://laobeijing0806.github.io/2017/02/19/第一篇文章/">
+    <link itemprop="mainEntityOfPage" href="http://laobeijing0806.github.io/2017/04/12/理解CSS浮动与清理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LiuBoJun">
@@ -302,7 +302,7 @@
             
             
               
-                第一篇文章
+                理解CSS浮动与清理
               
             
           </h1>
@@ -317,8 +317,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-19T19:56:00+08:00">
-                2017-02-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-12T10:15:11+08:00">
+                2017-04-12
               </time>
             
 
@@ -340,8 +340,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
                   </a>
                 </span>
 
@@ -358,9 +358,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/02/19/第一篇文章/#comments" itemprop="discussionUrl">
+                <a href="/2017/04/12/理解CSS浮动与清理/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/02/19/第一篇文章/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/04/12/理解CSS浮动与清理/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -368,7 +368,7 @@
 
           
           
-             <span id="/2017/02/19/第一篇文章/" class="leancloud_visitors" data-flag-title="第一篇文章">
+             <span id="/2017/04/12/理解CSS浮动与清理/" class="leancloud_visitors" data-flag-title="理解CSS浮动与清理">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -397,14 +397,48 @@
       
 
       
-        <h3 id="没人指望你来这里"><a href="#没人指望你来这里" class="headerlink" title="没人指望你来这里"></a>没人指望你来这里</h3><p>这是我的第一篇博客，从一个月前开始搭这个博客，到现在写下第一篇文章（逃），写下第一个字，终于折腾好了，我等不及要开始了！</p>
-<p>文章的开始我想先用一句nike的广告词来表明我转到前端的感受</p>
+        <p>作为前端写了很多页面布局，但是浮动这块一直是我似懂非懂的盲点，一方面用浮动能实现很多布局，另一方面浮动造成的影响又会破坏布局让人头疼，所以今天就特地写篇博文解决这块盲点。</p>
+<p>本文主要讨论以下几个问题：<br>1.浮动的原始用途<br>2.浮动为什么会有文本环绕效果<br>3.如何清理浮动造成的影响</p>
+<h3 id="浮动的原始用途"><a href="#浮动的原始用途" class="headerlink" title="浮动的原始用途"></a>浮动的原始用途</h3><p>以下内容来自张鑫旭大神的<a href="http://www.zhangxinxu.com/wordpress/2010/01/css-float%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%B7%B1%E5%85%A5%E7%A0%94%E7%A9%B6%E3%80%81%E8%AF%A6%E8%A7%A3%E5%8F%8A%E6%8B%93%E5%B1%95%E4%B8%80/" target="_blank" rel="external">《CSS float浮动的深入研究、详解及拓展(一)》</a>：</p>
 <blockquote>
-<p>You ‘re not supposed to be here, but here you are.</p>
+<p>假设现在CSS中没有浮动(float)属性，那么会变成一个什么样子。我们会发现，目前流行采用浮动方法实现的无论是分栏布局，还是列表排列我们都可以用其他一些CSS属性（不考虑table）代替实现，唯一一个实现不了的就是“文字环绕图片”，我是想不出来能有什么方法可以让文字环绕图片显示。好，这个替代不了的作用才是float真正的意义所在。</p>
 </blockquote>
-<p>从进大学的那一天开始，就没人指望我要做什么。当班长，加社团，拿奖学金，加入篮球院队，早起练球，参加比赛，还有——<strong>成为一名前端开发</strong>。</p>
-<p>没人指望我做这些，但我还是做了。</p>
-<p>期待证明</p>
+<p>总结起来一句话：<strong>实现文本环绕图片的效果。</strong></p>
+<h3 id="浮动为什么会有文本环绕效果"><a href="#浮动为什么会有文本环绕效果" class="headerlink" title="浮动为什么会有文本环绕效果"></a>浮动为什么会有文本环绕效果</h3><p>产生这个疑问主要来自于以往的印象：</p>
+<blockquote>
+<p>浮动的元素是脱离文档流的。</p>
+</blockquote>
+<p>咦？你都脱离文档流了不是应该和下方未浮动的元素重叠吗，为什么文本还能环绕你呢？</p>
+<p>这个问题一直困扰着我，直到我看到《精通CSS》这本书。文中写到：</p>
+<blockquote>
+<p>浮动会让元素脱离文档流，不再影响不浮动的元素。实际上，并不完全如此。如果浮动的元素后面有一个文档流中的元素，那么<strong>这个元素的框会表现得像浮动根本不存在一样</strong>。但是，<strong>框的文本内容会受到浮动元素的影响</strong>，会移动以留出空间。</p>
+</blockquote>
+<p>也就是说，<strong>浮动元素的确脱离了文档流，因此文档流中的块框会无视浮动的元素，但是文本不会</strong>。这点与绝对定位的脱离文档流不一样。</p>
+<p>知乎上<a href="https://zhihu.com/question/24529373/answer/29135021" target="_blank" rel="external">张秋怡学姐的回答</a>也印证了这一观点。</p>
+<p>补充一点：文档流这个说法其实不准确，在W3C标准中，只有<a href="https://www.w3.org/TR/CSS2/visuren.html#normal-flow" target="_blank" rel="external">普通流</a>(normal flow)，但是许多国内文章和翻译的书籍里用的都是文档流，久而久之大家就都用文档流的说法了。</p>
+<h3 id="如何清理浮动造成的影响"><a href="#如何清理浮动造成的影响" class="headerlink" title="如何清理浮动造成的影响"></a>如何清理浮动造成的影响</h3><p>其实浮动带来的影响主要是</p>
+<p>1.元素脱离普通流造成的父元素高度塌陷<br>2.下方非文本元素与浮动元素重叠，破坏了原本布局</p>
+<p>要清理这些影响，很多人都知道用clear属性,为什么clear能清除浮动呢？</p>
+<p>有两种说法：<br>1.浏览器<strong>在设置clear元素的顶上添加足够多的外边距</strong>，使元素上边框边界垂直下降到浮动元素下外边距的下面。<br>2.<strong>在设置clear元素的上外边距之上增加清除空间，而外边距本身不改变。</strong></p>
+<p>前者是CSS1和CSS2的实现原理，后者是CSS2.1的实现原理。但无论哪种都达到了给浮动的元素留出了垂直空间，看上去清除了浮动的效果。同时，在设置clear元素之上填充的空间是实际存在于普通流中的。因此，父元素高度被撑开了。</p>
+<p>关于清除浮动，其实还有许多方法。在<a href="http://www.iyunlu.com/view/css-xhtml/55.html" target="_blank" rel="external">《那些年我们一起清除过的浮动》</a>这篇文章里，将清除浮动的方法简单分为两类：</p>
+<blockquote>
+<p>1.通过在浮动元素的末尾添加一个空元素，设置 clear：both属性，after伪元素其实也是通过 content 在元素的后面生成了内容为一个点的块级元素；<br>2.通过设置父元素 overflow 或者display：table 属性来闭合浮动。</p>
+</blockquote>
+<p>几乎所有清除浮动的方法都可以归纳到这两类中，这里结合上面的博文谈一谈，添加伪元素的方法：</p>
+<p>1.display: block，使生成的元素以块级元素显示，占满剩余空间。<br>2.在content中添加一个点，因为这个字符非常小。<br>3.设置height为0，因为不希望这个新的内容占据空间破坏布局高度。<br>4.将visibility设置为hidden，使生成的内容不可见，允许可能被生成的内容盖住的部分可以点击和交互。<br>5.clear:　both清理浮动的影响</p>
+<p>代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">.clearfix:after &#123;</div><div class="line">	display: block;</div><div class="line">	content: &quot;.&quot;;</div><div class="line">	height: 0;</div><div class="line">	visibility: hidden;</div><div class="line">	clear: both;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这种方法在大多数现代浏览器中都是有效的，也是比较推荐的。至于其他方法网上有很多，这里就不详细讲了。</p>
+<p>本文借鉴了部分其他博客与文档，附上链接：</p>
+<p>参考链接：</p>
+<p><a href="http://www.w3school.com.cn/cssref/pr_class_clear.asp" target="_blank" rel="external">CSS　clear属性</a></p>
+<p><a href="http://www.w3school.com.cn/css/css_positioning_floating.asp" target="_blank" rel="external">CSS 浮动</a></p>
+<p><a href="http://lxxyx.win/2016/02/06/%E5%AF%92%E5%81%87%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0(8" target="_blank" rel="external">寒假前端学习(8)——理解CSS浮动与清除浮动</a>%E2%80%94%E2%80%94%E7%90%86%E8%A7%A3CSS%E6%B5%AE%E5%8A%A8%E4%B8%8E%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/)</p>
+<p><a href="http://www.iyunlu.com/view/css-xhtml/55.html" target="_blank" rel="external">那些年我们一起清除过的浮动</a></p>
+<p><a href="https://www.w3.org/TR/CSS2/visuren.html#normal-flow" target="_blank" rel="external">noraml flow</a></p>
+<p><a href="http://www.zhangxinxu.com/wordpress/2010/01/css-float%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%B7%B1%E5%85%A5%E7%A0%94%E7%A9%B6%E3%80%81%E8%AF%A6%E8%A7%A3%E5%8F%8A%E6%8B%93%E5%B1%95%E4%B8%80/" target="_blank" rel="external">CSS float浮动的深入研究、详解及拓展(一)</a></p>
+<p><a href="https://zhihu.com/question/24529373/answer/29135021" target="_blank" rel="external">张秋怡学姐的回答</a></p>
 
       
     </div>
@@ -455,7 +489,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/生活/" rel="tag"># 生活</a>
+            <a href="/tags/前端/" rel="tag"># 前端</a>
           
         </div>
       
@@ -468,15 +502,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/30/探索CSS水平垂直居中布局/" rel="next" title="探索CSS水平垂直居中布局">
-                <i class="fa fa-chevron-left"></i> 探索CSS水平垂直居中布局
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/10/关于博客的搭建/" rel="prev" title="关于博客的搭建">
+                关于博客的搭建 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -648,7 +682,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#没人指望你来这里"><span class="nav-number">1.</span> <span class="nav-text">没人指望你来这里</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#浮动的原始用途"><span class="nav-number">1.</span> <span class="nav-text">浮动的原始用途</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮动为什么会有文本环绕效果"><span class="nav-number">2.</span> <span class="nav-text">浮动为什么会有文本环绕效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何清理浮动造成的影响"><span class="nav-number">3.</span> <span class="nav-text">如何清理浮动造成的影响</span></a></li></ol></div>
             
 
           </div>
@@ -785,9 +819,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://laobeijing0806.github.io/2017/02/19/第一篇文章/';
-          this.page.identifier = '2017/02/19/第一篇文章/';
-          this.page.title = '第一篇文章';
+          this.page.url = 'http://laobeijing0806.github.io/2017/04/12/理解CSS浮动与清理/';
+          this.page.identifier = '2017/04/12/理解CSS浮动与清理/';
+          this.page.title = '理解CSS浮动与清理';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://lbjde-qian-duan-zhi-lu.disqus.com/embed.js';
