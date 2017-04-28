@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>lbj的前端之路</title>
+  <subtitle>学习杰诶斯</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://laobeijing0806.github.io/"/>
+  <updated>2017-04-12T13:10:16.299Z</updated>
+  <id>http://laobeijing0806.github.io/</id>
+  
+  <author>
+    <name>LiuBoJun</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>理解CSS浮动与清理</title>
+    <link href="http://laobeijing0806.github.io/2017/04/12/%E7%90%86%E8%A7%A3CSS%E6%B5%AE%E5%8A%A8%E4%B8%8E%E6%B8%85%E7%90%86/"/>
+    <id>http://laobeijing0806.github.io/2017/04/12/理解CSS浮动与清理/</id>
+    <published>2017-04-12T02:15:11.000Z</published>
+    <updated>2017-04-12T13:10:16.299Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;作为前端写了很多页面布局，但是浮动这块一直是我似懂非懂的盲点，一方面用浮动能实现很多布局，另一方面浮动造成的影响又会破坏布局让人头疼，所以今天就特地写篇博文解决这块盲点。&lt;/p&gt;
+&lt;p&gt;本文主要讨论以下几个问题：&lt;br&gt;1.浮动的原始用途&lt;br&gt;2.浮动为什么会有文本环绕效
+    
+    </summary>
+    
+      <category term="前端" scheme="http://laobeijing0806.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="http://laobeijing0806.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于博客的搭建</title>
+    <link href="http://laobeijing0806.github.io/2017/04/10/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
+    <id>http://laobeijing0806.github.io/2017/04/10/关于博客的搭建/</id>
+    <published>2017-04-10T12:27:00.000Z</published>
+    <updated>2017-04-12T03:02:10.146Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;从一月份开始搭建博客，中间跑去做了两个项目，一直拖拖拉拉，直到昨天才把所有功能都完善。这一路走来，踩了不少坑。今天我就把碰到的问题和解决办法在这里写一下，希望能帮到读者。&lt;/p&gt;
+&lt;h3 id=&quot;Hexo&quot;&gt;&lt;a href=&quot;#Hexo&quot; class=&quot;headerlink
+    
+    </summary>
+    
+      <category term="生活" scheme="http://laobeijing0806.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="生活" scheme="http://laobeijing0806.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>探索CSS水平垂直居中布局</title>
+    <link href="http://laobeijing0806.github.io/2017/03/30/%E6%8E%A2%E7%B4%A2CSS%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E5%B8%83%E5%B1%80/"/>
+    <id>http://laobeijing0806.github.io/2017/03/30/探索CSS水平垂直居中布局/</id>
+    <published>2017-03-30T12:43:15.000Z</published>
+    <updated>2017-04-10T12:25:28.999Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;写前端写了近半年，总有一些CSS的小问题等待解决，这几天有空就解决一下这些问题。&lt;/p&gt;
+&lt;p&gt;本文主要列出CSS实现水平垂直居中的几种方法，以及不同方法的优缺点和适用场景以便读者参考使用。&lt;/p&gt;
+&lt;h3 id=&quot;水平居中&quot;&gt;&lt;a href=&quot;#水平居中&quot; class=&quot;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://laobeijing0806.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="http://laobeijing0806.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一篇文章</title>
+    <link href="http://laobeijing0806.github.io/2017/02/19/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <id>http://laobeijing0806.github.io/2017/02/19/第一篇文章/</id>
+    <published>2017-02-19T11:56:00.000Z</published>
+    <updated>2017-04-10T13:23:11.409Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;没人指望你来这里&quot;&gt;&lt;a href=&quot;#没人指望你来这里&quot; class=&quot;headerlink&quot; title=&quot;没人指望你来这里&quot;&gt;&lt;/a&gt;没人指望你来这里&lt;/h3&gt;&lt;p&gt;这是我的第一篇博客，从一个月前开始搭这个博客，到现在写下第一篇文章（逃），写下第一个字，终于
+    
+    </summary>
+    
+      <category term="生活" scheme="http://laobeijing0806.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="生活" scheme="http://laobeijing0806.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+</feed>
