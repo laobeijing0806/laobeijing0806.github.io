@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laobeijing0806.github.io/"/>
-  <updated>2017-04-12T13:10:16.299Z</updated>
+  <updated>2017-05-04T14:48:13.408Z</updated>
   <id>http://laobeijing0806.github.io/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于未来如何前进的思考</title>
+    <link href="http://laobeijing0806.github.io/2017/05/04/%E5%85%B3%E4%BA%8E%E6%9C%AA%E6%9D%A5%E5%A6%82%E4%BD%95%E5%89%8D%E8%BF%9B%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <id>http://laobeijing0806.github.io/2017/05/04/关于未来如何前进的思考/</id>
+    <published>2017-05-04T13:08:07.000Z</published>
+    <updated>2017-05-04T14:48:13.408Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;今后我会一直做前端写代码吗？&quot;&gt;&lt;a href=&quot;#今后我会一直做前端写代码吗？&quot; class=&quot;headerlink&quot; title=&quot;今后我会一直做前端写代码吗？&quot;&gt;&lt;/a&gt;今后我会一直做前端写代码吗？&lt;/h3&gt;&lt;p&gt;这个问题来自今天看到的一篇公众号推文&lt;a h
+    
+    </summary>
+    
+      <category term="生活" scheme="http://laobeijing0806.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="生活" scheme="http://laobeijing0806.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>理解CSS浮动与清理</title>
