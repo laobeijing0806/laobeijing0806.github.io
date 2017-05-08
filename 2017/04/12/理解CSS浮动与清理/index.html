@@ -96,7 +96,7 @@
 <meta property="og:url" content="http://laobeijing0806.github.io/2017/04/12/理解CSS浮动与清理/index.html">
 <meta property="og:site_name" content="lbj的前端之路">
 <meta property="og:description" content="作为前端写了很多页面布局，但是浮动这块一直是我似懂非懂的盲点，一方面用浮动能实现很多布局，另一方面浮动造成的影响又会破坏布局让人头疼，所以今天就特地写篇博文解决这块盲点。 本文主要讨论以下几个问题：1.浮动的原始用途2.浮动为什么会有文本环绕效果3.如何清理浮动造成的影响 浮动的原始用途以下内容来自张鑫旭大神的《CSS float浮动的深入研究、详解及拓展(一)》：  假设现在CSS中没有浮动(f">
-<meta property="og:updated_time" content="2017-04-12T13:10:16.299Z">
+<meta property="og:updated_time" content="2017-05-08T08:59:13.651Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="理解CSS浮动与清理">
 <meta name="twitter:description" content="作为前端写了很多页面布局，但是浮动这块一直是我似懂非懂的盲点，一方面用浮动能实现很多布局，另一方面浮动造成的影响又会破坏布局让人头疼，所以今天就特地写篇博文解决这块盲点。 本文主要讨论以下几个问题：1.浮动的原始用途2.浮动为什么会有文本环绕效果3.如何清理浮动造成的影响 浮动的原始用途以下内容来自张鑫旭大神的《CSS float浮动的深入研究、详解及拓展(一)》：  假设现在CSS中没有浮动(f">
@@ -428,7 +428,7 @@
 <p>几乎所有清除浮动的方法都可以归纳到这两类中，这里结合上面的博文谈一谈，添加伪元素的方法：</p>
 <p>1.display: block，使生成的元素以块级元素显示，占满剩余空间。<br>2.在content中添加一个点，因为这个字符非常小。<br>3.设置height为0，因为不希望这个新的内容占据空间破坏布局高度。<br>4.将visibility设置为hidden，使生成的内容不可见，允许可能被生成的内容盖住的部分可以点击和交互。<br>5.clear:　both清理浮动的影响</p>
 <p>代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">.clearfix:after &#123;</div><div class="line">	display: block;</div><div class="line">	content: &quot;.&quot;;</div><div class="line">	height: 0;</div><div class="line">	visibility: hidden;</div><div class="line">	clear: both;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">.clearfix:after &#123;</div><div class="line">  display: block;</div><div class="line">  content: &quot;.&quot;;</div><div class="line">  height: 0;</div><div class="line">  visibility: hidden;</div><div class="line">  clear: both;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>这种方法在大多数现代浏览器中都是有效的，也是比较推荐的。至于其他方法网上有很多，这里就不详细讲了。</p>
 <p>本文借鉴了部分其他博客与文档，附上链接：</p>
 <p>参考链接：</p>
