@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="生活," />
+  <meta name="keywords" content="前端," />
 
 
 
@@ -89,17 +89,19 @@
 
 
 
-<meta name="description" content="今后我会一直做前端写代码吗？这个问题来自今天看到的一篇公众号推文《技术人的未来在哪里？》，里面提到了我从开始决定当一名程序员就在思考问题：我会不会写一辈子代码？显然，答案是不会。 如何规划将来的职业发展在知乎上也经常看过类似回答：许多人写了多年代码之后，会转型做管理岗，比如当leader去带别人做项目，自己不做底层敲代码的事情，而是更多地去思考项目架构上的问题。这种是比较常见和容易做到的，而有一些">
-<meta name="keywords" content="生活">
+<meta name="description" content="原型链之前一直都不是很理解，这两天把《你不知道的JavaScript》和《JavaScript高级程序设计》的原型链那章看完后有所理解，在这里先记下来，加深印象。 什么是原型对象要讲清楚什么是原型链需要从原型对象开始谈，那么什么是原型对象呢？《JavaScript高级程序设计》中是这样讲的：  无论什么时候，只要创建了一个新函数，就会根据一组特定的规则为该函数创建一个prototype属性，这个属">
+<meta name="keywords" content="前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于未来如何前进的思考">
-<meta property="og:url" content="http://laobeijing0806.github.io/2017/05/04/关于未来如何前进的思考/index.html">
+<meta property="og:title" content="学习JavaScript之原型链">
+<meta property="og:url" content="http://laobeijing0806.github.io/2017/05/09/学习JavaScript之原型链/index.html">
 <meta property="og:site_name" content="lbj的前端之路">
-<meta property="og:description" content="今后我会一直做前端写代码吗？这个问题来自今天看到的一篇公众号推文《技术人的未来在哪里？》，里面提到了我从开始决定当一名程序员就在思考问题：我会不会写一辈子代码？显然，答案是不会。 如何规划将来的职业发展在知乎上也经常看过类似回答：许多人写了多年代码之后，会转型做管理岗，比如当leader去带别人做项目，自己不做底层敲代码的事情，而是更多地去思考项目架构上的问题。这种是比较常见和容易做到的，而有一些">
-<meta property="og:updated_time" content="2017-05-08T09:03:47.968Z">
+<meta property="og:description" content="原型链之前一直都不是很理解，这两天把《你不知道的JavaScript》和《JavaScript高级程序设计》的原型链那章看完后有所理解，在这里先记下来，加深印象。 什么是原型对象要讲清楚什么是原型链需要从原型对象开始谈，那么什么是原型对象呢？《JavaScript高级程序设计》中是这样讲的：  无论什么时候，只要创建了一个新函数，就会根据一组特定的规则为该函数创建一个prototype属性，这个属">
+<meta property="og:image" content="http://t1ree.github.io/images/prototype_2.png">
+<meta property="og:updated_time" content="2017-05-09T14:45:43.676Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于未来如何前进的思考">
-<meta name="twitter:description" content="今后我会一直做前端写代码吗？这个问题来自今天看到的一篇公众号推文《技术人的未来在哪里？》，里面提到了我从开始决定当一名程序员就在思考问题：我会不会写一辈子代码？显然，答案是不会。 如何规划将来的职业发展在知乎上也经常看过类似回答：许多人写了多年代码之后，会转型做管理岗，比如当leader去带别人做项目，自己不做底层敲代码的事情，而是更多地去思考项目架构上的问题。这种是比较常见和容易做到的，而有一些">
+<meta name="twitter:title" content="学习JavaScript之原型链">
+<meta name="twitter:description" content="原型链之前一直都不是很理解，这两天把《你不知道的JavaScript》和《JavaScript高级程序设计》的原型链那章看完后有所理解，在这里先记下来，加深印象。 什么是原型对象要讲清楚什么是原型链需要从原型对象开始谈，那么什么是原型对象呢？《JavaScript高级程序设计》中是这样讲的：  无论什么时候，只要创建了一个新函数，就会根据一组特定的规则为该函数创建一个prototype属性，这个属">
+<meta name="twitter:image" content="http://t1ree.github.io/images/prototype_2.png">
 
 
 
@@ -127,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://laobeijing0806.github.io/2017/05/04/关于未来如何前进的思考/"/>
+  <link rel="canonical" href="http://laobeijing0806.github.io/2017/05/09/学习JavaScript之原型链/"/>
 
 
 
 
 
-  <title> 关于未来如何前进的思考 | lbj的前端之路 </title>
+  <title> 学习JavaScript之原型链 | lbj的前端之路 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -281,7 +283,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://laobeijing0806.github.io/2017/05/04/关于未来如何前进的思考/">
+    <link itemprop="mainEntityOfPage" href="http://laobeijing0806.github.io/2017/05/09/学习JavaScript之原型链/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LiuBoJun">
@@ -302,7 +304,7 @@
             
             
               
-                关于未来如何前进的思考
+                学习JavaScript之原型链
               
             
           </h1>
@@ -317,8 +319,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-04T21:08:07+08:00">
-                2017-05-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-09T07:37:38+08:00">
+                2017-05-09
               </time>
             
 
@@ -340,8 +342,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
                   </a>
                 </span>
 
@@ -358,9 +360,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/05/04/关于未来如何前进的思考/#comments" itemprop="discussionUrl">
+                <a href="/2017/05/09/学习JavaScript之原型链/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/05/04/关于未来如何前进的思考/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/05/09/学习JavaScript之原型链/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -368,7 +370,7 @@
 
           
           
-             <span id="/2017/05/04/关于未来如何前进的思考/" class="leancloud_visitors" data-flag-title="关于未来如何前进的思考">
+             <span id="/2017/05/09/学习JavaScript之原型链/" class="leancloud_visitors" data-flag-title="学习JavaScript之原型链">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -397,23 +399,31 @@
       
 
       
-        <h3 id="今后我会一直做前端写代码吗？"><a href="#今后我会一直做前端写代码吗？" class="headerlink" title="今后我会一直做前端写代码吗？"></a>今后我会一直做前端写代码吗？</h3><p>这个问题来自今天看到的一篇公众号推文《<a href="http://mp.weixin.qq.com/s?__biz=MzA4NTQwNDcyMA==&amp;mid=2650662802&amp;idx=1&amp;sn=c726d5c126ccf853fe25037e67d6aff1&amp;chksm=87d13acdb0a6b3dbe0909d6cfdd513f52050fa2cf9008faf725c89347e6fba40df38e1c00dba&amp;mpshare=1&amp;scene=1&amp;srcid=0504GpHHZK0ngqubBQVs350Q#rd" target="_blank" rel="external">技术人的未来在哪里？</a>》，里面提到了我从开始决定当一名程序员就在思考问题：我会不会写一辈子代码？显然，答案是不会。</p>
-<h3 id="如何规划将来的职业发展"><a href="#如何规划将来的职业发展" class="headerlink" title="如何规划将来的职业发展"></a>如何规划将来的职业发展</h3><p>在知乎上也经常看过类似回答：许多人写了多年代码之后，会转型做管理岗，比如当leader去带别人做项目，自己不做底层敲代码的事情，而是更多地去思考项目架构上的问题。这种是比较常见和容易做到的，而有一些做得比较好的大牛级人物则会继续深入某个领域，去钻研和深入理解某种技术，这些人往往是行业里的代表人物。</p>
-<p>现在似乎是两条路摆在我面前，一是多年后转管理岗；二是做一名深入研究某个领域的专家。这两者无论哪条路都需要自己先在前端这个领域不断地学习和积累，需要不断地试错和锻炼，等技术达到了相当的高度，才是做选择的时候。但是我这个人有个不好的习惯——<strong>做事情往往喜欢规划好了再按照计划开始走下去。</strong>为什么说这个习惯不好，因为我常常因此想得太多而做得太少，很多时候只顾着思考后面会发生什么而忽略了实际操作的可能性，这导致自己经常提出许多不切实际的幻想，最终又因为难以实现而放弃，所以现在我依旧时不时会陷入这种无意义的幻想中。但是自从写前端之后，我偶尔会发现自己之前的一些想法其实在不断实践中发现其实是可行的。因此我渐渐开始学会放弃部分无意义的幻想，转而去实现有意义且有可能实现的想法。</p>
-<h3 id="决定给自己更多可能"><a href="#决定给自己更多可能" class="headerlink" title="决定给自己更多可能"></a>决定给自己更多可能</h3><p>首先，从小到大我对许多新奇的事物都充满了好奇，对于不理解的新鲜事物我都保持着开放和包容的心态，因为我觉得任何领域都有值得学习的东西。也正因为如此，我对于某一特定领域难以保持长期的专注，所以去钻研和深入理解并不是我的兴趣所在。</p>
-<p>其次，上面的那篇推文里写到了：</p>
+        <p>原型链之前一直都不是很理解，这两天把《你不知道的JavaScript》和《JavaScript高级程序设计》的原型链那章看完后有所理解，在这里先记下来，加深印象。</p>
+<h3 id="什么是原型对象"><a href="#什么是原型对象" class="headerlink" title="什么是原型对象"></a>什么是原型对象</h3><p>要讲清楚什么是原型链需要从原型对象开始谈，那么什么是原型对象呢？《JavaScript高级程序设计》中是这样讲的：</p>
 <blockquote>
-<p>多领域、多维度发展的人才才是技术人的未来，也才是未来人才的发展方向。</p>
+<p>无论什么时候，只要创建了一个新函数，就会根据一组特定的规则为该函数创建一个prototype属性，这个属性指向函数的原型对象。</p>
 </blockquote>
-<p>这句话我突然想到了冯巩曾经在一个相声里有句台词：</p>
+<p>简单来说，<strong>原型对象也是对象，但是通过原型对象可以实现对象的属性继承。</strong><br>这里用《JavaScript高级程序设计》这本书上的demo来解释一下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">function Person () &#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">Person.prototype.name = &apos;Nicholas&apos;</div><div class="line">Person.prototype.age = 29</div><div class="line">Person.prototype.job = &apos;Software Engineer&apos;</div><div class="line">Person.prototype.sayName = function () &#123;</div><div class="line">  console.log(this.name)</div><div class="line">&#125;</div><div class="line"></div><div class="line">var person1 = new Person()</div><div class="line"></div><div class="line">var person2 = new Person()</div></pre></td></tr></table></figure></p>
+<p>这里声明了一个Person函数，没有定义任何属性；但是在Person的原型对象里定义了name，age，job属性和sayName方法。之后创建了两个Person的实例对象，person1和person2。在这里构造函数，原型对象，实例对象三者的关系用一张图片表示就是<img src="http://t1ree.github.io/images/prototype_2.png" alt=""><br>（图片来源谷歌，侵删）</p>
+<p>如图所示，Person的prototype指针指向它的原型对象，实例对象的[[Prototype]]指针也指向它的原型对象。这里简单说明一下什么是[[Prototype]]指针：</p>
 <blockquote>
-<p>我是说相声里歌唱的最好的，唱歌里相声说的最好的。</p>
+<p>调用构造函数创建一个新实例之后，该实例的内部将包含一个指针（内部属性），指向构造函数的原型对象，这就是[[Prototype]]指针。</p>
 </blockquote>
-<p>虽然这讽刺的是某些人对于知识的学习杂而不精，但是这却是公司梦寐以求的人才，当然，这建立在你的业务水平和其他人差不多的同时你还有其他方面才能的情况下。</p>
-<p>因此，无论我今后要去做什么岗位，首先要做好的就是当前的领域，也就是前端。在做好了自己的基本工作之外，我不会给自己设任何限制，我会去学习后端，产品，设计这些方面的知识，这样在平时工作中方便沟(dui)通(ren)。我会尝试去把自己培养成为一个多维度的人才，走出学习的舒适区，去尝试使用不同的技术，获得不同方面的成长，同时也给自己的未来更多可能。</p>
-<p>写到这里，关于未来的思路开始变得清晰了：不去永远做底层的码农，努力精进自己前端的技能，同时尽可能学习其他方面的知识，等到技术达到一定高度了转去做管理岗位。这便是我关于未来的部分规划，尽管还有很多东西等待实践去解决，但是目前对于未来我已经变得不那么迷茫了。</p>
-<p>目前写了几篇博客，虽然没人看T T，但是这个习惯我会尝试去坚持。因为把自己零碎的想法拼凑成一篇文章并写下来，对自己来说是一种锻炼。这种锻炼不仅是在语言组织方面，还在一定程度上帮助自己克服了爱幻想的坏习惯。总之，写博客给我的帮助颇多，也希望今后自己的文笔和技术能越来越好。</p>
-<p>时夜，距离毕业季一年，于家园工作室新机房记录。</p>
+<p>现在，person1和person2的[[Prototype]]都指向了Person.prototype，这样的话Person.prototype里的方法和属性是被person1和person2共用的。</p>
+<p>如何证明他们共用Person.prototype里面的属性和方法？请执行下面的语句：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">person1.sayName() // &apos;Nicholas&apos;</div><div class="line">person2.sayName() // &apos;Nicholas&apos;</div></pre></td></tr></table></figure></p>
+<p>有人说了，你这初始化的name属性只有一个，执行的结果当然都一样啊。那么请再试试下面这句：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">console.log(person1.sayName === person2.sayName) //true</div></pre></td></tr></table></figure></p>
+<p>结果很明显，person1.sayName和person2.sayName指向的是同一个方法。到这里可能有人会疑惑：一开始的代码中Person函数里并没有定义任何属性和方法，为什么person1和person2能执行sayName方法？那么这就要来谈谈对象属性调用的过程了。</p>
+<p>以上面代码为例，当你执行person1.name时，解析器会开始查找person1中有没有name属性，如果找到了则返回属性值；如果没找到，则在person1的原型对象中继续找，如果找到了则返回属性值；如果没找到，就沿着原型链往上继续找（这个后面再说），如果最终还是没找到就返回undefined。</p>
+<p>到这里大家也明白了多个对象实例共享原型对象的属性和方法的基本原理了，那么有人又会问了，如果我通过给实例对象属性赋值能不能重写原型对象里的属性和方法呢？</p>
+<p>答案是不行的，在实例对象中对原型对象中的同名属性赋值会屏蔽原型对象中的属性。简单解释就是，对person1中的name属性赋值会直接在person1中添加name属性。但是有两种情况下，当name属性不存在于实例中而存在于原型对象中，直接给实例中的name赋值会有不一样事情发生：<br>１．当原型对象中的name属性标记为只读(writable: false)时，对name属性的赋值不会在person1添加name属性，也不会修改原型对象中的name属性，在严格模式下还会报错。<br>２．当原型对象中的name属性是一个setter，那么对实例中的name属性执行赋值语句就会调用setter，但name不会被添加到实例对象中。<br>这部分如果不懂什么是只读和setter，大家可以去看一下<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty#Modifying_a_property" target="_blank" rel="external">Object.defineProperty</a>。</p>
+<h3 id="什么是原型链"><a href="#什么是原型链" class="headerlink" title="什么是原型链"></a>什么是原型链</h3><p>其实讲到这里，原型对象是什么已经基本清楚了。那么原型链就很简单了，继续上面的demo：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">function Parent () &#123;</div><div class="line">  this.parentName = &apos;noOne&apos;</div><div class="line">&#125;</div><div class="line"></div><div class="line">function Person () &#123;</div><div class="line">  this.name = &apos;Nicholas&apos;</div><div class="line">&#125;</div><div class="line"></div><div class="line">Person.prototype = new Parent()</div><div class="line"></div><div class="line">var person1 = new Person()</div></pre></td></tr></table></figure></p>
+<p>这个例子中，我们把Parent的实例对象赋给了Person的原型对象。Person.prototype中的[[Prototype]]此时指向了Parent.prototype。那么举一反三，Parent.prototype也可以是另一个原型的实例对象，这样不断地层层递进便构成了原型链。</p>
+<p>原型链的主要作用便是实现继承，这部分后续的文章我会继续讲。</p>
+<p>本人经验很浅，目前对于前端仍在不断摸索和学习，文章有错误，希望各位能指正。最后附上本人博客地址和原文链接，希望能向各位多多学习。</p>
+<blockquote>
+<p><a href="http://frankryu.win/" target="_blank" rel="external">lbj的前端之路</a><br>原文链接：<a href="">学习JavaScript之原型链</a></p>
+</blockquote>
 
       
     </div>
@@ -464,7 +474,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/生活/" rel="tag"># 生活</a>
+            <a href="/tags/前端/" rel="tag"># 前端</a>
           
         </div>
       
@@ -477,8 +487,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/12/理解CSS浮动与清理/" rel="next" title="理解CSS浮动与清理">
-                <i class="fa fa-chevron-left"></i> 理解CSS浮动与清理
+              <a href="/2017/05/04/关于未来如何前进的思考/" rel="next" title="关于未来如何前进的思考">
+                <i class="fa fa-chevron-left"></i> 关于未来如何前进的思考
               </a>
             
           </div>
@@ -486,10 +496,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/05/09/学习JavaScript之原型链/" rel="prev" title="学习JavaScript之原型链">
-                学习JavaScript之原型链 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -661,7 +667,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#今后我会一直做前端写代码吗？"><span class="nav-number">1.</span> <span class="nav-text">今后我会一直做前端写代码吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何规划将来的职业发展"><span class="nav-number">2.</span> <span class="nav-text">如何规划将来的职业发展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#决定给自己更多可能"><span class="nav-number">3.</span> <span class="nav-text">决定给自己更多可能</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是原型对象"><span class="nav-number">1.</span> <span class="nav-text">什么是原型对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是原型链"><span class="nav-number">2.</span> <span class="nav-text">什么是原型链</span></a></li></ol></div>
             
 
           </div>
@@ -798,9 +804,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://laobeijing0806.github.io/2017/05/04/关于未来如何前进的思考/';
-          this.page.identifier = '2017/05/04/关于未来如何前进的思考/';
-          this.page.title = '关于未来如何前进的思考';
+          this.page.url = 'http://laobeijing0806.github.io/2017/05/09/学习JavaScript之原型链/';
+          this.page.identifier = '2017/05/09/学习JavaScript之原型链/';
+          this.page.title = '学习JavaScript之原型链';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://lbjde-qian-duan-zhi-lu.disqus.com/embed.js';

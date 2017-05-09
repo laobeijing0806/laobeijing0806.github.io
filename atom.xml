@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laobeijing0806.github.io/"/>
-  <updated>2017-05-08T09:03:47.968Z</updated>
+  <updated>2017-05-09T14:45:43.676Z</updated>
   <id>http://laobeijing0806.github.io/</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习JavaScript之原型链</title>
+    <link href="http://laobeijing0806.github.io/2017/05/09/%E5%AD%A6%E4%B9%A0JavaScript%E4%B9%8B%E5%8E%9F%E5%9E%8B%E9%93%BE/"/>
+    <id>http://laobeijing0806.github.io/2017/05/09/学习JavaScript之原型链/</id>
+    <published>2017-05-08T23:37:38.000Z</published>
+    <updated>2017-05-09T14:45:43.676Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;原型链之前一直都不是很理解，这两天把《你不知道的JavaScript》和《JavaScript高级程序设计》的原型链那章看完后有所理解，在这里先记下来，加深印象。&lt;/p&gt;
+&lt;h3 id=&quot;什么是原型对象&quot;&gt;&lt;a href=&quot;#什么是原型对象&quot; class=&quot;headerli
+    
+    </summary>
+    
+      <category term="前端" scheme="http://laobeijing0806.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="http://laobeijing0806.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>关于未来如何前进的思考</title>
