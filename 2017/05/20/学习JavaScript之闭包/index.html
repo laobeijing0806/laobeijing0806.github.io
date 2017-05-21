@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="生活," />
+  <meta name="keywords" content="前端," />
 
 
 
@@ -89,17 +89,17 @@
 
 
 
-<meta name="description" content="今后我会一直做前端写代码吗？这个问题来自今天看到的一篇公众号推文《技术人的未来在哪里？》，里面提到了我从开始决定当一名程序员就在思考问题：我会不会写一辈子代码？显然，答案是不会。 如何规划将来的职业发展在知乎上也经常看过类似回答：许多人写了多年代码之后，会转型做管理岗，比如当leader去带别人做项目，自己不做底层敲代码的事情，而是更多地去思考项目架构上的问题。这种是比较常见和容易做到的，而有一些">
-<meta name="keywords" content="生活">
+<meta name="description" content="闭包在我的前端学习中一直也是盲点，之前很多次看到别人提到我都是完全听不懂。最近一直看书和写demo，对闭包也逐渐有所理解了，在这里写下这篇博客。 ###　从作用域链讲起 首先明确几个概念：1.JavaScript有函数级作用域，但没有块级作用域。2.当要使用一个变量时，会沿着作用域链一步一步向上查找。 这里有一个demo： 12345678var a = 1function foo () &amp;#12">
+<meta name="keywords" content="前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于未来如何前进的思考">
-<meta property="og:url" content="http://laobeijing0806.github.io/2017/05/04/关于未来如何前进的思考/index.html">
+<meta property="og:title" content="学习JavaScript之闭包">
+<meta property="og:url" content="http://laobeijing0806.github.io/2017/05/20/学习JavaScript之闭包/index.html">
 <meta property="og:site_name" content="lbj的前端之路">
-<meta property="og:description" content="今后我会一直做前端写代码吗？这个问题来自今天看到的一篇公众号推文《技术人的未来在哪里？》，里面提到了我从开始决定当一名程序员就在思考问题：我会不会写一辈子代码？显然，答案是不会。 如何规划将来的职业发展在知乎上也经常看过类似回答：许多人写了多年代码之后，会转型做管理岗，比如当leader去带别人做项目，自己不做底层敲代码的事情，而是更多地去思考项目架构上的问题。这种是比较常见和容易做到的，而有一些">
-<meta property="og:updated_time" content="2017-05-08T09:03:47.968Z">
+<meta property="og:description" content="闭包在我的前端学习中一直也是盲点，之前很多次看到别人提到我都是完全听不懂。最近一直看书和写demo，对闭包也逐渐有所理解了，在这里写下这篇博客。 ###　从作用域链讲起 首先明确几个概念：1.JavaScript有函数级作用域，但没有块级作用域。2.当要使用一个变量时，会沿着作用域链一步一步向上查找。 这里有一个demo： 12345678var a = 1function foo () &amp;#12">
+<meta property="og:updated_time" content="2017-05-21T12:23:33.058Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于未来如何前进的思考">
-<meta name="twitter:description" content="今后我会一直做前端写代码吗？这个问题来自今天看到的一篇公众号推文《技术人的未来在哪里？》，里面提到了我从开始决定当一名程序员就在思考问题：我会不会写一辈子代码？显然，答案是不会。 如何规划将来的职业发展在知乎上也经常看过类似回答：许多人写了多年代码之后，会转型做管理岗，比如当leader去带别人做项目，自己不做底层敲代码的事情，而是更多地去思考项目架构上的问题。这种是比较常见和容易做到的，而有一些">
+<meta name="twitter:title" content="学习JavaScript之闭包">
+<meta name="twitter:description" content="闭包在我的前端学习中一直也是盲点，之前很多次看到别人提到我都是完全听不懂。最近一直看书和写demo，对闭包也逐渐有所理解了，在这里写下这篇博客。 ###　从作用域链讲起 首先明确几个概念：1.JavaScript有函数级作用域，但没有块级作用域。2.当要使用一个变量时，会沿着作用域链一步一步向上查找。 这里有一个demo： 12345678var a = 1function foo () &amp;#12">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://laobeijing0806.github.io/2017/05/04/关于未来如何前进的思考/"/>
+  <link rel="canonical" href="http://laobeijing0806.github.io/2017/05/20/学习JavaScript之闭包/"/>
 
 
 
 
 
-  <title> 关于未来如何前进的思考 | lbj的前端之路 </title>
+  <title> 学习JavaScript之闭包 | lbj的前端之路 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -281,7 +281,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://laobeijing0806.github.io/2017/05/04/关于未来如何前进的思考/">
+    <link itemprop="mainEntityOfPage" href="http://laobeijing0806.github.io/2017/05/20/学习JavaScript之闭包/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LiuBoJun">
@@ -302,7 +302,7 @@
             
             
               
-                关于未来如何前进的思考
+                学习JavaScript之闭包
               
             
           </h1>
@@ -317,8 +317,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-04T21:08:07+08:00">
-                2017-05-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-20T08:14:58+08:00">
+                2017-05-20
               </time>
             
 
@@ -340,8 +340,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
                   </a>
                 </span>
 
@@ -358,9 +358,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/05/04/关于未来如何前进的思考/#comments" itemprop="discussionUrl">
+                <a href="/2017/05/20/学习JavaScript之闭包/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/05/04/关于未来如何前进的思考/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/05/20/学习JavaScript之闭包/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -368,7 +368,7 @@
 
           
           
-             <span id="/2017/05/04/关于未来如何前进的思考/" class="leancloud_visitors" data-flag-title="关于未来如何前进的思考">
+             <span id="/2017/05/20/学习JavaScript之闭包/" class="leancloud_visitors" data-flag-title="学习JavaScript之闭包">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -397,23 +397,33 @@
       
 
       
-        <h3 id="今后我会一直做前端写代码吗？"><a href="#今后我会一直做前端写代码吗？" class="headerlink" title="今后我会一直做前端写代码吗？"></a>今后我会一直做前端写代码吗？</h3><p>这个问题来自今天看到的一篇公众号推文《<a href="http://mp.weixin.qq.com/s?__biz=MzA4NTQwNDcyMA==&amp;mid=2650662802&amp;idx=1&amp;sn=c726d5c126ccf853fe25037e67d6aff1&amp;chksm=87d13acdb0a6b3dbe0909d6cfdd513f52050fa2cf9008faf725c89347e6fba40df38e1c00dba&amp;mpshare=1&amp;scene=1&amp;srcid=0504GpHHZK0ngqubBQVs350Q#rd" target="_blank" rel="external">技术人的未来在哪里？</a>》，里面提到了我从开始决定当一名程序员就在思考问题：我会不会写一辈子代码？显然，答案是不会。</p>
-<h3 id="如何规划将来的职业发展"><a href="#如何规划将来的职业发展" class="headerlink" title="如何规划将来的职业发展"></a>如何规划将来的职业发展</h3><p>在知乎上也经常看过类似回答：许多人写了多年代码之后，会转型做管理岗，比如当leader去带别人做项目，自己不做底层敲代码的事情，而是更多地去思考项目架构上的问题。这种是比较常见和容易做到的，而有一些做得比较好的大牛级人物则会继续深入某个领域，去钻研和深入理解某种技术，这些人往往是行业里的代表人物。</p>
-<p>现在似乎是两条路摆在我面前，一是多年后转管理岗；二是做一名深入研究某个领域的专家。这两者无论哪条路都需要自己先在前端这个领域不断地学习和积累，需要不断地试错和锻炼，等技术达到了相当的高度，才是做选择的时候。但是我这个人有个不好的习惯——<strong>做事情往往喜欢规划好了再按照计划开始走下去。</strong>为什么说这个习惯不好，因为我常常因此想得太多而做得太少，很多时候只顾着思考后面会发生什么而忽略了实际操作的可能性，这导致自己经常提出许多不切实际的幻想，最终又因为难以实现而放弃，所以现在我依旧时不时会陷入这种无意义的幻想中。但是自从写前端之后，我偶尔会发现自己之前的一些想法其实在不断实践中发现其实是可行的。因此我渐渐开始学会放弃部分无意义的幻想，转而去实现有意义且有可能实现的想法。</p>
-<h3 id="决定给自己更多可能"><a href="#决定给自己更多可能" class="headerlink" title="决定给自己更多可能"></a>决定给自己更多可能</h3><p>首先，从小到大我对许多新奇的事物都充满了好奇，对于不理解的新鲜事物我都保持着开放和包容的心态，因为我觉得任何领域都有值得学习的东西。也正因为如此，我对于某一特定领域难以保持长期的专注，所以去钻研和深入理解并不是我的兴趣所在。</p>
-<p>其次，上面的那篇推文里写到了：</p>
+        <p>闭包在我的前端学习中一直也是盲点，之前很多次看到别人提到我都是完全听不懂。最近一直看书和写demo，对闭包也逐渐有所理解了，在这里写下这篇博客。</p>
+<p>###　从作用域链讲起</p>
+<p>首先明确几个概念：<br>1.JavaScript有函数级作用域，但没有块级作用域。<br>2.当要使用一个变量时，会沿着作用域链一步一步向上查找。</p>
+<p>这里有一个demo：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var a = 1</div><div class="line"></div><div class="line">function foo () &#123;</div><div class="line">  var a = 2</div><div class="line">&#125;</div><div class="line"></div><div class="line">foo()</div><div class="line">console.log(a) // a = 1</div></pre></td></tr></table></figure>
+<p>结果当然是<code>a = 1</code>，虽然在foo函数中重新声明了a并且赋给它一个新的值，但是var声明的变量只在foo()函数中有效，函数执行完毕就会销毁，因此全局作用域中a的值没有变化。</p>
+<p>接下来再看这个demo：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">for (var i = 0; i &lt; 10; i++) &#123;</div><div class="line">  // code</div><div class="line">&#125;</div><div class="line"></div><div class="line">console.log(i) // i = 10</div></pre></td></tr></table></figure>
+<p>这里在for循环结束之后仍然能在外部访问到i，就是因为JavaScript没有块级作用域造成的。</p>
+<h3 id="闭包的特性"><a href="#闭包的特性" class="headerlink" title="闭包的特性"></a>闭包的特性</h3><p>闭包的主要特性就是可以从外部访问函数内部的属性和方法。先看一个demo：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function foo () &#123;</div><div class="line">  var a = 1</div><div class="line">&#125;</div><div class="line">foo()</div><div class="line">console.log(a) // undefined</div></pre></td></tr></table></figure></p>
+<p>正常情况下，定义在函数内部的局部变量在函数执行完之后就会被销毁，因此在外部是无法访问局部变量的。那应该怎么做才能访问呢？请继续看：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">function foo () &#123;</div><div class="line">  var a = 1</div><div class="line">  function bar () &#123;</div><div class="line">    console.log(a)</div><div class="line">  &#125;</div><div class="line">  return bar</div><div class="line">&#125;</div><div class="line">var baz = foo()</div><div class="line">baz() // 1</div></pre></td></tr></table></figure></p>
+<p>在这个demo中，我们在函数foo()内部又定义了一个函数bar()，并把它的函数名返回，这样便能在外部实现对内部变量a的访问。</p>
+<p>有人问了：不是说函数执行结束之后内部变量会被销毁吗？你这不科学啊。</p>
+<p>是的，原来函数执行结束之后内部变量的确会被销毁，但是<strong>这里内部函数bar()在foo()执行时被返回并保存到了外部的baz中。这时候foo()执行完后，baz中依旧保存着对函数bar()的引用，因此bar()的作用域并没有被释放，根据之前提到的变量查找方式，在bar()函数的外层作用域中找到了a。</strong></p>
+<p>以上就是使用闭包能从外部访问内部属性的原理。</p>
+<h3 id="闭包的用途"><a href="#闭包的用途" class="headerlink" title="闭包的用途"></a>闭包的用途</h3><p>利用闭包强大的特性，最方便的用途就是实现私有变量和私有方法；另外，因为使用闭包会在内存中保存函数作用域，因此也能保存变量的值。</p>
+<p>此话怎解？请看下面的demo：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">for (var i = 1; i &lt;= 5; i++) &#123;</div><div class="line">  setTimeout(function timer () &#123;</div><div class="line">    console.log(i)</div><div class="line">  &#125;, i * 1000)</div><div class="line">&#125; // 6 6 6 6 6</div></pre></td></tr></table></figure></p>
+<p>这里的结果并不是我们预想中的每隔一秒依次输出12345，而是每隔一秒输出一个6，为什么会这样呢？</p>
+<p>首先，这个6是变量i最终退出循环时的值，其次var声明的变量没有块级作用域，因此i实际上在全局作用域中都访问得到。到这里不难理解了，setTimeout在循环结束后执行timer()函数时，访问的i实际上在全局作用域中，此时i=6，因此后面的每个timer()函数执行访问的i都是6。那么问题又来了，怎样才能让闭包访问的i是我们想要的呢？</p>
+<p>其实很简单，让i变成局部变量，在循环结束之后销毁，这样每个闭包访问的就是保存在作用域中的局部变量i，也就是对应的12345。请看下面的demo：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">for (var i = 1; i &lt;= 5; i++) &#123;</div><div class="line">  (function (j) &#123;</div><div class="line">    setTimeout(function timer () &#123;</div><div class="line">      console.log(j)</div><div class="line">    &#125;, j * 1000)</div><div class="line">  &#125;)(i)</div><div class="line">&#125; // 1 2 3 4 5</div></pre></td></tr></table></figure></p>
+<p>这里用到了立即执行函数IIFE，可能有些难以理解。那我一步一步解释：立即执行函数其实就是JavaScript模仿块级作用域的方法，这里你可以把它简单看成一个函数调用。i就是传给调用函数的参数，内部匿名函数的形参j接收到i的值开始执行setTimeout。此时j就是函数级作用域中的局部变量，在循环结束后，timer()函数开始执行，因为它是一个闭包，所以能访问保存在作用域中的变量j，也就输出了我们想要的结果。</p>
+<p>当然更简单的方式是用ES6的let来声明i，这样也是使得i变成局部变量，其他关于ES6这里就不多提，有兴趣的可以自行看<a href="http://es6.ruanyifeng.com/#docs/let#基本用法" target="_blank" rel="external">let基本用法</a>。</p>
+<h3 id="闭包导致的问题"><a href="#闭包导致的问题" class="headerlink" title="闭包导致的问题"></a>闭包导致的问题</h3><p>1.因为闭包会使得函数中的变量都保存在内存中，如不能及时释放会对性能造成影响。<br>2.在IE9以下的浏览器会有内存泄漏的问题。（关于这块我后续会写文章详细说明）</p>
+<p>本人经验尚浅，目前对于前端仍在不断摸索和学习，文章如有错误，欢迎各位指正。最后附上本人博客地址和原文链接，希望能向各位多多学习。</p>
 <blockquote>
-<p>多领域、多维度发展的人才才是技术人的未来，也才是未来人才的发展方向。</p>
+<p><a href="http://frankryu.win/" target="_blank" rel="external">lbj的前端之路</a><br>原文链接：<a href="http://frankryu.win/2017/05/09/%E5%AD%A6%E4%B9%A0JavaScript%E4%B9%8B%E5%8E%9F%E5%9E%8B%E9%93%BE/" target="_blank" rel="external">学习JavaScript之原型链</a></p>
 </blockquote>
-<p>这句话我突然想到了冯巩曾经在一个相声里有句台词：</p>
-<blockquote>
-<p>我是说相声里歌唱的最好的，唱歌里相声说的最好的。</p>
-</blockquote>
-<p>虽然这讽刺的是某些人对于知识的学习杂而不精，但是这却是公司梦寐以求的人才，当然，这建立在你的业务水平和其他人差不多的同时你还有其他方面才能的情况下。</p>
-<p>因此，无论我今后要去做什么岗位，首先要做好的就是当前的领域，也就是前端。在做好了自己的基本工作之外，我不会给自己设任何限制，我会去学习后端，产品，设计这些方面的知识，这样在平时工作中方便沟(dui)通(ren)。我会尝试去把自己培养成为一个多维度的人才，走出学习的舒适区，去尝试使用不同的技术，获得不同方面的成长，同时也给自己的未来更多可能。</p>
-<p>写到这里，关于未来的思路开始变得清晰了：不去永远做底层的码农，努力精进自己前端的技能，同时尽可能学习其他方面的知识，等到技术达到一定高度了转去做管理岗位。这便是我关于未来的部分规划，尽管还有很多东西等待实践去解决，但是目前对于未来我已经变得不那么迷茫了。</p>
-<p>目前写了几篇博客，虽然没人看T T，但是这个习惯我会尝试去坚持。因为把自己零碎的想法拼凑成一篇文章并写下来，对自己来说是一种锻炼。这种锻炼不仅是在语言组织方面，还在一定程度上帮助自己克服了爱幻想的坏习惯。总之，写博客给我的帮助颇多，也希望今后自己的文笔和技术能越来越好。</p>
-<p>时夜，距离毕业季一年，于家园工作室新机房记录。</p>
 
       
     </div>
@@ -464,7 +474,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/生活/" rel="tag"># 生活</a>
+            <a href="/tags/前端/" rel="tag"># 前端</a>
           
         </div>
       
@@ -477,8 +487,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/12/理解CSS浮动与清理/" rel="next" title="理解CSS浮动与清理">
-                <i class="fa fa-chevron-left"></i> 理解CSS浮动与清理
+              <a href="/2017/05/09/学习JavaScript之原型链/" rel="next" title="学习JavaScript之原型链">
+                <i class="fa fa-chevron-left"></i> 学习JavaScript之原型链
               </a>
             
           </div>
@@ -486,10 +496,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/05/09/学习JavaScript之原型链/" rel="prev" title="学习JavaScript之原型链">
-                学习JavaScript之原型链 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -661,7 +667,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#今后我会一直做前端写代码吗？"><span class="nav-number">1.</span> <span class="nav-text">今后我会一直做前端写代码吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何规划将来的职业发展"><span class="nav-number">2.</span> <span class="nav-text">如何规划将来的职业发展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#决定给自己更多可能"><span class="nav-number">3.</span> <span class="nav-text">决定给自己更多可能</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包的特性"><span class="nav-number">1.</span> <span class="nav-text">闭包的特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包的用途"><span class="nav-number">2.</span> <span class="nav-text">闭包的用途</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包导致的问题"><span class="nav-number">3.</span> <span class="nav-text">闭包导致的问题</span></a></li></ol></div>
             
 
           </div>
@@ -798,9 +804,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://laobeijing0806.github.io/2017/05/04/关于未来如何前进的思考/';
-          this.page.identifier = '2017/05/04/关于未来如何前进的思考/';
-          this.page.title = '关于未来如何前进的思考';
+          this.page.url = 'http://laobeijing0806.github.io/2017/05/20/学习JavaScript之闭包/';
+          this.page.identifier = '2017/05/20/学习JavaScript之闭包/';
+          this.page.title = '学习JavaScript之闭包';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://lbjde-qian-duan-zhi-lu.disqus.com/embed.js';
