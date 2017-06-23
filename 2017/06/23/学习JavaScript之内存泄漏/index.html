@@ -89,17 +89,17 @@
 
 
 
-<meta name="description" content="接上回我写了一篇关于闭包的博客， 最后谈到闭包导致的问题时留了一个尾：  在IE9以下的浏览器中会有内存泄漏的问题。  今天的博客就继续探索一下内存泄漏的问题。 浅谈JavaScript垃圾回收机制1.标记清除 一开始垃圾收集器会给内存中的所有变量做一个标记，之后当程序运行进入相应的环境时，会去掉环境中的变量和被环境中变量引用的变量标记；当退出该环境后，无法再被访问的变量又重新被标记，这些被重新标">
+<meta name="description" content="接上回我写了一篇关于闭包的博客， 最后谈到闭包导致的问题时留了一个尾：  在IE9以下的浏览器中会有内存泄漏的问题。  今天的博客就继续探索一下内存泄漏的问题。 浅谈JavaScript垃圾回收机制 标记清除  一开始垃圾收集器会给内存中的所有变量做一个标记，之后当程序运行进入相应的环境时，会去掉环境中的变量和被环境中变量引用的变量标记；当退出该环境后，无法再被访问的变量又重新被标记，这些被重新标">
 <meta name="keywords" content="前端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习JavaScript之内存泄漏">
 <meta property="og:url" content="http://laobeijing0806.github.io/2017/06/23/学习JavaScript之内存泄漏/index.html">
 <meta property="og:site_name" content="lbj的前端之路">
-<meta property="og:description" content="接上回我写了一篇关于闭包的博客， 最后谈到闭包导致的问题时留了一个尾：  在IE9以下的浏览器中会有内存泄漏的问题。  今天的博客就继续探索一下内存泄漏的问题。 浅谈JavaScript垃圾回收机制1.标记清除 一开始垃圾收集器会给内存中的所有变量做一个标记，之后当程序运行进入相应的环境时，会去掉环境中的变量和被环境中变量引用的变量标记；当退出该环境后，无法再被访问的变量又重新被标记，这些被重新标">
-<meta property="og:updated_time" content="2017-06-23T14:00:11.262Z">
+<meta property="og:description" content="接上回我写了一篇关于闭包的博客， 最后谈到闭包导致的问题时留了一个尾：  在IE9以下的浏览器中会有内存泄漏的问题。  今天的博客就继续探索一下内存泄漏的问题。 浅谈JavaScript垃圾回收机制 标记清除  一开始垃圾收集器会给内存中的所有变量做一个标记，之后当程序运行进入相应的环境时，会去掉环境中的变量和被环境中变量引用的变量标记；当退出该环境后，无法再被访问的变量又重新被标记，这些被重新标">
+<meta property="og:updated_time" content="2017-06-23T14:02:55.359Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习JavaScript之内存泄漏">
-<meta name="twitter:description" content="接上回我写了一篇关于闭包的博客， 最后谈到闭包导致的问题时留了一个尾：  在IE9以下的浏览器中会有内存泄漏的问题。  今天的博客就继续探索一下内存泄漏的问题。 浅谈JavaScript垃圾回收机制1.标记清除 一开始垃圾收集器会给内存中的所有变量做一个标记，之后当程序运行进入相应的环境时，会去掉环境中的变量和被环境中变量引用的变量标记；当退出该环境后，无法再被访问的变量又重新被标记，这些被重新标">
+<meta name="twitter:description" content="接上回我写了一篇关于闭包的博客， 最后谈到闭包导致的问题时留了一个尾：  在IE9以下的浏览器中会有内存泄漏的问题。  今天的博客就继续探索一下内存泄漏的问题。 浅谈JavaScript垃圾回收机制 标记清除  一开始垃圾收集器会给内存中的所有变量做一个标记，之后当程序运行进入相应的环境时，会去掉环境中的变量和被环境中变量引用的变量标记；当退出该环境后，无法再被访问的变量又重新被标记，这些被重新标">
 
 
 
@@ -402,9 +402,13 @@
 <p>在IE9以下的浏览器中会有内存泄漏的问题。</p>
 </blockquote>
 <p>今天的博客就继续探索一下内存泄漏的问题。</p>
-<h3 id="浅谈JavaScript垃圾回收机制"><a href="#浅谈JavaScript垃圾回收机制" class="headerlink" title="浅谈JavaScript垃圾回收机制"></a>浅谈JavaScript垃圾回收机制</h3><p>1.标记清除</p>
+<h3 id="浅谈JavaScript垃圾回收机制"><a href="#浅谈JavaScript垃圾回收机制" class="headerlink" title="浅谈JavaScript垃圾回收机制"></a>浅谈JavaScript垃圾回收机制</h3><ol>
+<li>标记清除</li>
+</ol>
 <p>一开始垃圾收集器会给内存中的所有变量做一个标记，之后当程序运行进入相应的环境时，会去掉环境中的变量和被环境中变量引用的变量标记；当退出该环境后，无法再被访问的变量又重新被标记，这些被重新标记的变量就会被垃圾收集器回收。</p>
-<p>2.引用计数</p>
+<ol>
+<li>引用计数</li>
+</ol>
 <p>记录每个值被引用的次数，当被引用次数为0时该值才会被回收。如果某个值被其他对象引用（赋给某个变量），引用次数+1；如果不再被引用则-1。</p>
 <h3 id="闭包导致的内存泄漏怎么产生的"><a href="#闭包导致的内存泄漏怎么产生的" class="headerlink" title="闭包导致的内存泄漏怎么产生的"></a>闭包导致的内存泄漏怎么产生的</h3><p>在IE9以前的浏览器中，DOM对象的垃圾回收机制就是使用引用计数（虽然JS引擎是用标记清除），因此一旦产生循环引用（比如下面这个例子）内存就会一直被占用而无法回收。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> div = <span class="built_in">document</span>.getElementById(<span class="string">'myTitle'</span>)</div><div class="line">  div.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">	alert(div.id)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -414,7 +418,7 @@
 <p>这样DOM对象的引用就变成了0，也就会被正常地回收了。</p>
 <blockquote>
 <p>博客地址：<a href="http://frankryu.win/" target="_blank" rel="external">lbj的前端之路</a></p>
-<p>原文链接：<a href=""></a></p>
+<p>原文链接：<a href="http://www.frankryu.win/2017/06/23/%E5%AD%A6%E4%B9%A0JavaScript%E4%B9%8B%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F/" target="_blank" rel="external">学习JavaScript之内存泄漏</a></p>
 </blockquote>
 
       
