@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://laobeijing0806.github.io/"/>
-  <updated>2017-06-23T04:10:37.359Z</updated>
+  <updated>2017-06-23T14:00:11.262Z</updated>
   <id>http://laobeijing0806.github.io/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习JavaScript之内存泄漏</title>
+    <link href="http://laobeijing0806.github.io/2017/06/23/%E5%AD%A6%E4%B9%A0JavaScript%E4%B9%8B%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F/"/>
+    <id>http://laobeijing0806.github.io/2017/06/23/学习JavaScript之内存泄漏/</id>
+    <published>2017-06-23T11:17:01.000Z</published>
+    <updated>2017-06-23T14:00:11.262Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;接上回我写了一篇关于闭包的博客， 最后谈到闭包导致的问题时留了一个尾：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在IE9以下的浏览器中会有内存泄漏的问题。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;今天的博客就继续探索一下内存泄漏的问题。&lt;/p&gt;
+&lt;h3 id=&quot;浅谈Jav
+    
+    </summary>
+    
+      <category term="前端" scheme="http://laobeijing0806.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="http://laobeijing0806.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>2017暑假学习计划</title>
